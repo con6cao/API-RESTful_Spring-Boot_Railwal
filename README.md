@@ -1,7 +1,7 @@
 # API RESTful para gerenciar serviços. 
 
 ## Objetivo
-Esta aplicação vem com objetivo de replicar boas praticas ofertadas do curso de "Publicando Sua API REST na Nuvem Usando Spring Boot 3, Java 17 e Railway" no qual foi lencionado pelo Venilton FalvoJr Tech Lead, DIO
+Esta aplicação vem com objetivo de replicar boas praticas ofertadas do curso de "Publicando Sua API REST na Nuvem Usando Spring Boot 3, Java 17 e Railway" no qual foi lencionado pelo [Venilton Falvo Jr, Tech Lead](https://github.com/falvojr)[, DIO](https://web.dio.me/)
 
 ## Principais Tecnologias
  - **Java 17**: Utilizaremos a versão LTS mais recente do Java para tirar vantagem das últimas inovações que essa linguagem robusta e amplamente utilizada oferece;
