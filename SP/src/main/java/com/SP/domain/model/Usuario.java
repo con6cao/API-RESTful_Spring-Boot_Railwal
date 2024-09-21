@@ -1,15 +1,15 @@
 package com.SP.domain.model;
 
+import com.fasterxml.jackson.annotation.JsonRootName;
 import jakarta.persistence.*;
 import lombok.*;
-import java.util.List;
+import java.util.*;
 
 @Data
+@JsonRootName(value = "usuario")
 @Entity(name = "tb_user")
-@NoArgsConstructor
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class Usuario {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -18,9 +18,12 @@ public class Usuario {
     private String tipoIdentidade;
     private String endereco;
     private String numIdentidade;
-    private List<Competencia> competencias ;
-    private List<Habilidade> habilidades ;
-    private List<Experiencia> experiencias ;
-    private List<Contato> contatos ;
-
+   @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    private List<Competencia> competencias;
+   @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    private List<Habilidade> habilidades;
+   @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    private List<Experiencia> experiencias;
+   @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    private List<Contato> contatos;
 }
