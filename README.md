@@ -58,3 +58,7 @@ classDiagram
     Usuario --> Contato : possui
 
 ```
+##Documentação da API (Swagger)
+[https://sdw-2023-prd.up.railway.app/swagger-ui.html
+](https://sdw2024springjavarailway.up.railway.app/swagger-ui/index.html)Esta API ficará disponível no Railway por um período de tempo limitado ja que o objetivo é didatico. Entre contato com o [Suporte
+](https://w.app/JFpGq4).
